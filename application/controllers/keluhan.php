@@ -86,37 +86,41 @@ class Keluhan extends CI_Controller {
             $get_id_keluhan = $this->m_keluhan->get_id($this->input->post('keluhan'), date("Y-m-d H:i:s"));
             foreach ($get_id_keluhan as $rkeluhan) {
                 /* Pesan untuk ditampilkan, bahwa data telah berhasil di-insert-kan ke database */
-                $this->session->set_flashdata('pesan', '<center><div class="alert alert-success" style="color:yellowgreen;" id="alert"><i class="fa fa-info fa-2x"></i> <h4>Data berhasil ditambahkan.</h4><br><p>ID Complaint Anda : ' . $rkeluhan->id_keluhan . '</p><br><p>ID Complaint juga kami kirimkan ke email Anda (' . $rkeluhan->email_pelanggan . ')</p></div></center>');
+                $this->session->set_flashdata('pesan', '<center><div class="alert alert-success" style="color:yellowgreen;" id="alert"><i class="fa fa-info fa-2x"></i> <h4>Data berhasil ditambahkan.</h4><br><p>ID Complaint Anda : ' . $rkeluhan->id_keluhan . '</p><br><p>Harap catat ID Complaint Anda. Karena jika Anda ingin mengecek status keluhan yang telah Anda sampaikan, Anda diharuskan mencantumkan ID Complaint tersebut.</p></div></center>');
+                $id_keluhan = $rkeluhan->id_keluhan;
+                $email_to = $rkeluhan->email_pelanggan;
+                $judul_keluhan = $rkeluhan->judul_keluhan;
+                $deskrip_keluhan = $rkeluhan->deskrip_keluhan;
+                $tgl_keluhan = $rkeluhan->tgl_keluhan;
             }
 
             redirect(base_url().'home/#keluhan');
-//            header('Location:localhost')
 
-            $config['protocol'] = 'smtp';
-            $config['smtp_host'] = 'ssl://smtp.gmail.com'; //change this
-            $config['smtp_port'] = '25';
-            $config['smtp_user'] = 'fendi.septiawan0709@gmail.com'; //change this
-            $config['smtp_pass'] = 'password'; //change this
+//            $config['protocol'] = 'smtp';
+//            $config['smtp_host'] = 'ssl://smtp.gmail.com'; //change this
+//            $config['smtp_port'] = '25';
+//            $config['smtp_user'] = 'fendi.septiawan0709@gmail.com'; //change this
+//            $config['smtp_pass'] = 'password'; //change this
+//
+//            $config['smtp_timeout'] = '4';
+//            $config['mailtype'] = 'html';
+//            $config['charset'] = 'iso-8859-1';
+//            $config['wordwrap'] = TRUE;
+//            $config['newline'] = "\r\n"; //use double quotes to comply with RFC 822 standard
 
-            $config['smtp_timeout'] = '4';
-            $config['mailtype'] = 'html';
-            $config['charset'] = 'iso-8859-1';
-            $config['wordwrap'] = TRUE;
-            $config['newline'] = "\r\n"; //use double quotes to comply with RFC 822 standard
+//            $this->email->initialize($config);
 
-            $this->email->initialize($config);
+            $this->email->from('fendi.septiawan0709@gmail.com');
+            $this->email->to($email_to);
 
-            $this->email->from('fendi.septiawan0709@gmail.com', 'Your Name');
-            $this->email->to('fendi.septiawan0709@gmail.com');
-
-            $this->email->subject('Email Test');
-            $this->email->message('Testing the email class.');
+            $this->email->subject('[AUTOREPLY] Keluhan Anda pada Boox');
+            $this->email->message('Terima kasih telah menyampaikan keluhan Anda kepada kami. Berikut data keluhan Anda yang telah disampaikan kepada kami.<br> ID Complain : '.$id_keluhan.'<br>Topik Keluhan : '.$judul_keluhan.'<br>Deskripsi Keluhan : '.$deskrip_keluhan.'<br>Tanggal penyampaian keluhan : '.$tgl_keluhan.'.Sebagai bentuk pelayanan kami kepada pelanggan setia kami. Boox technology Indonesia memberikan kebebasan bagi pelanggan untuk menyampaikan keluhan kepada kami. Agar kami dapat terus memberikan pelayanan terbaik kami kepada pelanggan.');
 
             $this->email->send();
             if ($this->email->send() == TRUE) {
-                $this->session->set_flashdata('mail', '<h3>Berhasil</h3>');
+                $this->session->set_flashdata('mail', '<h3>Success send email to '.$email_to.'</h3>');
             } else {
-                $this->session->set_flashdata('mail', '<h3>Gagal</h3>');
+                $this->session->set_flashdata('mail', '<h3>Fail send email to '.$email_to.'</h3>');
             }
         } else {
             $this->session->set_flashdata('pesan', '<center><div class="alert alert-warning" style="color:tomato;" id="alert"><i class="fa fa-info fa-2x"></i> <h4>Data <strong>tidak</strong> berhasil ditambahkan.</h4></div></center>');
