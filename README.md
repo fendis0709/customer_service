@@ -2,7 +2,7 @@
 
 Layanan keluhan pelanggan Boox berbasis web. Pelanggan Boox dapat memberikan keluhan mereka terkait Boox, dan juga melacak status keluhan yang telah mereka laporkan dengan mencantumkan ID Complaint (ID Keluhan).
 
-# Instalasi
+## Instalasi
 
 1. Buka localhost/phpmyadmin
 2. Buat database dengan nama 'boox_customer_service'
@@ -16,7 +16,7 @@ Layanan keluhan pelanggan Boox berbasis web. Pelanggan Boox dapat memberikan kel
 5. Copy - Paste folder 'boox_customer_service' yang telah Anda dapatkan dari Github ini ke dalam folder C:/xampp/htdocs
 6. Buka localhost/boox_customer_service melalui web browser Anda.
 
-# Username & Password Admin
+## Username & Password Admin
 
 Pada database yang telah disediakan di Github ini, terdapat akun admin yang dapat Anda lakukan untuk login ke sistem aplikasi web.
 Username : admin
