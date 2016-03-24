@@ -80,7 +80,7 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <p>
-                                                    <label for="name">Selasa, 18 Maret 2016</label>
+                                                    <label for="name"><?php echo date("l, d-M-Y")?></label>
                                                 </p>
                                             </div>
                                         </div>
