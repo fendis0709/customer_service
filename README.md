@@ -1,6 +1,7 @@
 # Web Aplikasi Pelayanan Keluhan Boox
 
 Layanan keluhan pelanggan Boox berbasis web. Pelanggan Boox dapat memberikan keluhan mereka terkait Boox, dan juga melacak status keluhan yang telah mereka laporkan dengan mencantumkan ID Complaint (ID Keluhan). Selain itu, disisi Admin Boox juga dapat melihat semua keluhan yang tersedia, melakukan pencarian keluhan, dan mengubah status keluhan pelanggan.
+Aplikasi web ini dibangun dengan menggunakan Framework PHP Code Igniter versi 3 dan DBMS MySQL.
 
 ### Instalasi
 
