@@ -7,8 +7,10 @@ Layanan keluhan pelanggan Boox berbasis web. Pelanggan Boox dapat memberikan kel
 1. Buka localhost/phpmyadmin
 2. Buat database dengan nama 'boox_customer_service'
 3. 	Pastikan username dan password DB Anda adalah.
-	Username DB : root
+	```
+ 	Username DB : root
 	Password DB : 
+	```
 	*Jika Anda tidak mengubah konfigurasi default phpMyAdmin pengaturan ini tidak diperlukan.
 	**Jika Anda username dan Password phpMyAdmin telah dikonfigurasi / diubah, Anda perlu mengubah file boox_customer_service/application/database.php
 	Kemudian ubah pada kolom 'username' dan 'password' sesuai dengan username dan password pada phpMyAdmin.
