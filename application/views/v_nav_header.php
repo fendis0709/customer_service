@@ -47,7 +47,7 @@
                             <ul class="sf-menu">
                                 <li class="active"><a href="<?php echo base_url() ?>">Home</a></li>
                                 <li><a href="<?php echo base_url()?>keluhan/cari">Cari status keluhan</a></li>
-                                <li><a href="kontak">Kontak</a></li>
+                                <li><a href="<?php echo base_url()?>kontak">Kontak</a></li>
                                 <?php
                                 $username = $this->session->userdata('username');
                                 if (isset($username)) {

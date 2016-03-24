@@ -23,6 +23,8 @@
         <link href="<?php echo base_url(); ?>asset/admin/css/datatables/tools/css/dataTables.tableTools.css" rel="stylesheet">
 
         <script src="<?php echo base_url(); ?>asset/admin/js/jquery.min.js"></script>
+		
+		<link rel="shortcut icon" href="<?php echo base_url(); ?>asset/images/favicon.ico" type="image/x-icon" />
 
         <!--[if lt IE 9]>
               <script src="../assets/js/ie8-responsive-file-warning.js"></script>
