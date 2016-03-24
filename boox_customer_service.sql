@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 24 Mar 2016 pada 08.34
+-- Generation Time: 24 Mar 2016 pada 15.12
 -- Versi Server: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -40,7 +40,7 @@ CREATE TABLE `akun` (
 --
 
 INSERT INTO `akun` (`id_akun`, `nama_akun`, `email_akun`, `username_akun`, `password_akun`, `level_akun`) VALUES
-(1, 'Admin Master', 'admin@master.com', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
+(1, 'Admin Master', 'admin@boox.asia', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
 
 -- --------------------------------------------------------
 
@@ -66,9 +66,12 @@ CREATE TABLE `keluhan` (
 --
 
 INSERT INTO `keluhan` (`id_keluhan`, `id_akun`, `nama_pelanggan`, `email_pelanggan`, `judul_keluhan`, `deskrip_keluhan`, `status_keluhan`, `tgl_keluhan`, `tgl_proses`, `tgl_selesai`) VALUES
-(1, 1, 'Fendi', 'fendi_septiawan0709@yahoo.co.id', 'Uji coba - 1', 'Ini keluhan uji coba', 'Selesai', '2016-03-21 10:57:57', '2016-03-22 15:18:03', '2016-03-22 20:57:57'),
-(2, 1, 'Fendi Septiawan', 'fendi.septiawan0709@google.com', 'Uji coba - 2', 'Ini keluhan uji coba', 'Belum', '2016-03-21 18:58:52', NULL, NULL),
-(3, NULL, 'Joko Sasongko', 'joko@yahoo.co.id', 'sdfsdcsdf', 'sdfvsgdhghsvzdcz', 'Proses', '2016-03-22 01:13:06', '2016-03-22 14:29:14', NULL);
+(1, NULL, 'Joko', 'fendi_septiawan0709@yahoo.co.id', 'Topik coba', 'Keluhan coba', 'Belum', '2016-03-24 13:15:29', NULL, NULL),
+(2, NULL, 'Fendi', 'fendi.septiawan0709@gmail.com', 'Topik', 'Keluhan', 'Belum', '2016-03-24 13:26:55', NULL, NULL),
+(3, NULL, 'Fariz', 'fendi.septiawan0709@gmail.com', 'jhlsndnc', 'jnjsnfjlncdlc', 'Belum', '2016-03-24 13:31:54', NULL, NULL),
+(4, NULL, 'Rahmad', 'fendi.septiawan0709@gmail.com', 'Topik', 'Keluhan', 'Belum', '2016-03-24 13:38:17', NULL, NULL),
+(5, NULL, 'Bagus', 'fendi.septiawan0709@gmail.com', 'TIdak punya topik', 'tidak tahu', 'Belum', '2016-03-24 13:44:12', NULL, NULL),
+(6, NULL, 'Dichy', 'fendi.septiawan0709@gmail.com', 'jsncjn', 'jlnsdlcnslkdc', 'Belum', '2016-03-24 13:49:13', NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -85,22 +88,17 @@ ALTER TABLE `akun`
 --
 ALTER TABLE `keluhan`
   ADD PRIMARY KEY (`id_keluhan`),
-  ADD UNIQUE KEY `id_akun` (`id_akun`);
+  ADD KEY `id_akun` (`id_akun`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `akun`
---
-ALTER TABLE `akun`
-  MODIFY `id_akun` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
 -- AUTO_INCREMENT for table `keluhan`
 --
 ALTER TABLE `keluhan`
-  MODIFY `id_keluhan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_keluhan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
@@ -109,7 +107,7 @@ ALTER TABLE `keluhan`
 -- Ketidakleluasaan untuk tabel `keluhan`
 --
 ALTER TABLE `keluhan`
-  ADD CONSTRAINT `keluhan_ibfk_1` FOREIGN KEY (`id_akun`) REFERENCES `akun` (`id_akun`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `keluhan_ibfk_1` FOREIGN KEY (`id_akun`) REFERENCES `akun` (`id_akun`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
