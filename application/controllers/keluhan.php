@@ -185,6 +185,7 @@ class Keluhan extends CI_Controller {
                     'tgl_proses' => date("Y-m-d H:i:s")
                 );
                 $this->m_keluhan->update($id_keluhan, $data);
+                redirect('admin');
             } else if ($status_keluhan == 'Proses' && $status == 'Selesai') {
                 //Set tgl selesai
                 $data = array(

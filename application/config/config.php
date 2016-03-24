@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/boox_customer_service';
+$config['base_url'] = 'http://localhost:8080/boox_customer_service';
 
 /*
 |--------------------------------------------------------------------------

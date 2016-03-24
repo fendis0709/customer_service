@@ -61,7 +61,7 @@
                                     </li>
                                 <?php } else {
                                     ?>
-                                    <li><a href="login" class="main-button accent-color">Masuk</a></li>
+                                    <li><a href="<?php echo base_url()?>login" class="main-button accent-color">Masuk</a></li>
                                     <?php
                                 }
                                 ?>

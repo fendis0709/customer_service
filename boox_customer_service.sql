@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 24 Mar 2016 pada 15.12
+-- Generation Time: 24 Mar 2016 pada 15.23
 -- Versi Server: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -67,8 +67,8 @@ CREATE TABLE `keluhan` (
 
 INSERT INTO `keluhan` (`id_keluhan`, `id_akun`, `nama_pelanggan`, `email_pelanggan`, `judul_keluhan`, `deskrip_keluhan`, `status_keluhan`, `tgl_keluhan`, `tgl_proses`, `tgl_selesai`) VALUES
 (1, NULL, 'Joko', 'fendi_septiawan0709@yahoo.co.id', 'Topik coba', 'Keluhan coba', 'Belum', '2016-03-24 13:15:29', NULL, NULL),
-(2, NULL, 'Fendi', 'fendi.septiawan0709@gmail.com', 'Topik', 'Keluhan', 'Belum', '2016-03-24 13:26:55', NULL, NULL),
-(3, NULL, 'Fariz', 'fendi.septiawan0709@gmail.com', 'jhlsndnc', 'jnjsnfjlncdlc', 'Belum', '2016-03-24 13:31:54', NULL, NULL),
+(2, NULL, 'Fendi', 'fendi.septiawan0709@gmail.com', 'Topik', 'Keluhan', 'Selesai', '2016-03-24 13:26:55', '2016-03-24 14:18:51', '2016-03-24 14:21:16'),
+(3, NULL, 'Fariz', 'fendi.septiawan0709@gmail.com', 'jhlsndnc', 'jnjsnfjlncdlc', 'Proses', '2016-03-24 13:31:54', '2016-03-24 14:21:02', NULL),
 (4, NULL, 'Rahmad', 'fendi.septiawan0709@gmail.com', 'Topik', 'Keluhan', 'Belum', '2016-03-24 13:38:17', NULL, NULL),
 (5, NULL, 'Bagus', 'fendi.septiawan0709@gmail.com', 'TIdak punya topik', 'tidak tahu', 'Belum', '2016-03-24 13:44:12', NULL, NULL),
 (6, NULL, 'Dichy', 'fendi.septiawan0709@gmail.com', 'jsncjn', 'jlnsdlcnslkdc', 'Belum', '2016-03-24 13:49:13', NULL, NULL);
