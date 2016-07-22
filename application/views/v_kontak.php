@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>Boox | Kontak</title>
+        <title>CS | Kontak</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <meta name="author" content="templatemo">
@@ -29,7 +29,7 @@
 
     </head>
     <body>
-        <div class="first-widget parallax" id="contact">
+        <div class="first-widget parallax" id="blog">
             <div class="parallax-overlay">
                 <div class="container pageTitle">
                     <div class="row">

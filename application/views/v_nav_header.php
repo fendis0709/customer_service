@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
@@ -37,7 +36,7 @@
 
                     <div class="pull-left logo">
                         <a href="index.html">
-                            <img src="<?php echo base_url(); ?>asset/images/logo.png" alt="Boox Logo" style="max-height: 48px">
+                            <img src="<?php echo base_url(); ?>asset/images/logo.jpg" alt="CS Logo" style="max-height: 68px">
                         </a>
                     </div>	<!-- /.logo -->
 
@@ -45,9 +44,9 @@
 
                         <nav class="main-nav visible-md visible-lg">
                             <ul class="sf-menu">
-                                <li class="active"><a href="<?php echo base_url() ?>">Home</a></li>
-                                <li><a href="<?php echo base_url()?>keluhan/cari">Cari status keluhan</a></li>
-                                <li><a href="<?php echo base_url()?>kontak">Kontak</a></li>
+                                <li <?php echo (uri_string() == ""? "class='active'" : "");?>><a href="<?php echo base_url() ?>">Home</a></li>
+                                <li <?php echo (uri_string() == "keluhan/cari" ? "class='active'" : "");?>><a href="<?php echo base_url()?>keluhan/cari">Cari status keluhan</a></li>
+                                <li <?php echo (uri_string() == "kontak"? "class='active'" : "");?>><a href="<?php echo base_url()?>kontak">Kontak</a></li>
                                 <?php
                                 $username = $this->session->userdata('username');
                                 if (isset($username)) {

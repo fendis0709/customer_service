@@ -34,17 +34,17 @@
                     <div class="col-md-12">
                         <nav class="footer-nav clearfix">
                             <ul class="footer-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="portfolio.html">Customer Care</a></li>
-                                <li><a href="blog.html">Career</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="<?php echo base_url()?>">Home</a></li>
+                                <li><a href="<?php echo base_url()."keluhan/cari"?>">Customer Care</a></li>
+                                <li><a href="<?php echo base_url()?>">Career</a></li>
+                                <li><a href="<?php echo base_url()."kontak"?>">Contact</a></li>
                             </ul> <!-- /.footer-menu -->
                         </nav> <!-- /.footer-nav -->
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
                 <div class="row">
                     <div class="col-md-12">
-                        <p class="copyright-text">Copyright &copy; 2016 Boox Technology</p>
+                        <p class="copyright-text">Copyright &copy; 2016 - Fendi Septiawan</p>
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->

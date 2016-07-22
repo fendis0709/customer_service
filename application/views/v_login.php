@@ -8,7 +8,7 @@
         <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
         <link rel="shortcut icon" href="img/favicon.png">
 
-        <title>Boox | Masuk</title>
+        <title>CS | Masuk</title>
 
         <!-- Bootstrap CSS -->    
         <link href="<?php echo base_url(); ?>asset/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
                 <!--logo start-->
                 <a href="<?php echo base_url() ?>" class="logo">
-                    <img src="<?php echo base_url(); ?>asset/images/logo.png" alt="Boox Logo" style="max-height: 48px">
+                    <img src="<?php echo base_url(); ?>asset/images/logo.jpg" alt="CS Logo" style="max-height: 48px">
                 </a>
                 <!--logo end-->
 
