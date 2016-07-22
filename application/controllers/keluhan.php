@@ -94,21 +94,6 @@ class Keluhan extends CI_Controller {
                 $tgl_keluhan = $rkeluhan->tgl_keluhan;
             }
 
-
-//            $config['protocol'] = 'smtp';
-//            $config['smtp_host'] = 'ssl://smtp.gmail.com'; //change this
-//            $config['smtp_port'] = '25';
-//            $config['smtp_user'] = 'fendi.septiawan0709@gmail.com'; //change this
-//            $config['smtp_pass'] = '90ndang0709'; //change this
-//
-//            $config['smtp_timeout'] = '4';
-//            $config['mailtype'] = 'html';
-//            $config['charset'] = 'iso-8859-1';
-//            $config['wordwrap'] = TRUE;
-//            $config['newline'] = "\r\n"; //use double quotes to comply with RFC 822 standard
-//
-//            $this->email->initialize($config);
-
             $this->email->to($email_to);
 
             $this->email->subject('[AUTOREPLY] Keluhan Anda pada CS');

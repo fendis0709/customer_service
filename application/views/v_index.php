@@ -35,9 +35,9 @@
                 <div class="container home-intro-content">
                     <div class="row">
                         <div class="col-md-12">
-                            <h2>Boox Technology Indonesia</h2>
+                            <h2>Customer Service Indonesia</h2>
                             <p>Kami membangun produk-produk yang bisa membantu organisasi (pada semua level) <br>meningkatkan efektivitas dan efisiensi proses bisnis mereka. </p>
-                            <a href="#" class="large-button white-color">Download Boox Apps <i class="icon-button fa fa-download"></i></a>
+                            <a href="#" class="large-button white-color">Download CS Apps <i class="icon-button fa fa-download"></i></a>
                         </div> <!-- /.col-md-12 -->
                     </div> <!-- /.row -->
                 </div> <!-- /.container -->
@@ -48,8 +48,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="cta-title"><strong>Ingin tahu lebih banyak tentang Boox Technology Indonesia?</strong>  </h4>
-                        <a href="http://www.boox.asia" class="main-button accent-color">kunjungi Boox<i class="icon-button fa fa-arrow-right"></i></a>
+                        <h4 class="cta-title"><strong>Ingin tahu lebih banyak tentang Customer Service Indonesia?</strong>  </h4>
+                        <a href="http://www.boox.asia" class="main-button accent-color">kunjungi CS<i class="icon-button fa fa-arrow-right"></i></a>
                     </div> <!-- /.col-md-12 -->
                 </div> <!-- /.row -->
             </div> <!-- /.container -->
